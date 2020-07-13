@@ -1,0 +1,98 @@
+context:  Beyoncé Giselle Knowles-Carter (/biːˈjɒnseɪ/ bee-YON-say) (born September 4, 1981) is an American singer, songwriter, record producer and actress. Born and raised in Houston, Texas, she performed in various singing and dancing competitions as a child, and rose to fame in the late 1990s as lead singer of R&B girl-group Destiny's Child. Managed by her father, Mathew Knowles, the group became one of the world's best-selling girl groups of all time. Their hiatus saw the release of Beyoncé's debut album, Dangerously in Love (2003), which established her as a solo artist worldwide, earned five Grammy Awards and featured the Billboard Hot 100 number-one singles "Crazy in Love" and "Baby Boy".
+question:  When did Beyonce start becoming popular?
+{'guessed_answer': 'in the late 1990s', 'actual_answer': 'in the late 1990s'}
+
+
+context:  Beyoncé Giselle Knowles-Carter (/biːˈjɒnseɪ/ bee-YON-say) (born September 4, 1981) is an American singer, songwriter, record producer and actress. Born and raised in Houston, Texas, she performed in various singing and dancing competitions as a child, and rose to fame in the late 1990s as lead singer of R&B girl-group Destiny's Child. Managed by her father, Mathew Knowles, the group became one of the world's best-selling girl groups of all time. Their hiatus saw the release of Beyoncé's debut album, Dangerously in Love (2003), which established her as a solo artist worldwide, earned five Grammy Awards and featured the Billboard Hot 100 number-one singles "Crazy in Love" and "Baby Boy".
+question:  What was the first album Beyoncé released as a solo artist?
+{'guessed_answer': 'dangerously in love', 'actual_answer': 'Dangerously in Love'}
+
+
+context:  Frédéric François Chopin (/ˈʃoʊpæn/; French pronunciation: ​[fʁe.de.ʁik fʁɑ̃.swa ʃɔ.pɛ̃]; 22 February or 1 March 1810 – 17 October 1849), born Fryderyk Franciszek Chopin,[n 1] was a Polish and French (by citizenship and birth of father) composer and a virtuoso pianist of the Romantic era, who wrote primarily for the solo piano. He gained and has maintained renown worldwide as one of the leading musicians of his era, whose "poetic genius was based on a professional technique that was without equal in his generation." Chopin was born in what was then the Duchy of Warsaw, and grew up in Warsaw, which after 1815 became part of Congress Poland. A child prodigy, he completed his musical education and composed his earlier works in Warsaw before leaving Poland at the age of 20, less than a month before the outbreak of the November 1830 Uprising.
+question:  What year was Chopin born?
+{'guessed_answer': '1810', 'actual_answer': '1810'}
+
+
+context:  Frédéric François Chopin (/ˈʃoʊpæn/; French pronunciation: ​[fʁe.de.ʁik fʁɑ̃.swa ʃɔ.pɛ̃]; 22 February or 1 March 1810 – 17 October 1849), born Fryderyk Franciszek Chopin,[n 1] was a Polish and French (by citizenship and birth of father) composer and a virtuoso pianist of the Romantic era, who wrote primarily for the solo piano. He gained and has maintained renown worldwide as one of the leading musicians of his era, whose "poetic genius was based on a professional technique that was without equal in his generation." Chopin was born in what was then the Duchy of Warsaw, and grew up in Warsaw, which after 1815 became part of Congress Poland. A child prodigy, he completed his musical education and composed his earlier works in Warsaw before leaving Poland at the age of 20, less than a month before the outbreak of the November 1830 Uprising.
+question:  In what city was Chopin born and raised?
+{'guessed_answer': 'warsaw', 'actual_answer': 'Warsaw'}
+
+
+context:  The iPod is a line of portable media players and multi-purpose pocket computers designed and marketed by Apple Inc. The first line was released on October 23, 2001, about 8½ months after iTunes (Macintosh version) was released. The most recent iPod redesigns were announced on July 15, 2015. There are three current versions of the iPod: the ultra-compact iPod Shuffle, the compact iPod Nano and the touchscreen iPod Touch.
+question:  In what year was the first iPod released?
+{'guessed_answer': '2001', 'actual_answer': '2001'}
+
+
+context:  The Legend of Zelda: Twilight Princess (Japanese: ゼルダの伝説 トワイライトプリンセス, Hepburn: Zeruda no Densetsu: Towairaito Purinsesu?) is an action-adventure game developed and published by Nintendo for the GameCube and Wii home video game consoles. It is the thirteenth installment in the The Legend of Zelda series. Originally planned for release on the GameCube in November 2005, Twilight Princess was delayed by Nintendo to allow its developers to refine the game, add more content, and port it to the Wii. The Wii version was released alongside the console in North America in November 2006, and in Japan, Europe, and Australia the following month. The GameCube version was released worldwide in December 2006.[b]
+question:  What year was the Legend of Zelda:Twilight Princess originally planned for release?
+{'guessed_answer': '2005', 'actual_answer': '2005'}
+
+
+context:  Spectre (2015) is the twenty-fourth James Bond film produced by Eon Productions. It features Daniel Craig in his fourth performance as James Bond, and Christoph Waltz as Ernst Stavro Blofeld, with the film marking the character's re-introduction into the series. It was directed by Sam Mendes as his second James Bond film following Skyfall, and was written by John Logan, Neal Purvis, Robert Wade and Jez Butterworth. It is distributed by Metro-Goldwyn-Mayer and Columbia Pictures. With a budget around $245 million, it is the most expensive Bond film and one of the most expensive films ever made.
+question:  Which two movie studios distributed the James Bond film Spectre?
+{'guessed_answer': 'metro-goldwyn-mayer and columbia pictures', 'actual_answer': 'Metro-Goldwyn-Mayer and Columbia Pictures'}
+
+
+context:  New York—often called New York City or the City of New York to distinguish it from the State of New York, of which it is a part—is the most populous city in the United States and the center of the New York metropolitan area, the premier gateway for legal immigration to the United States and one of the most populous urban agglomerations in the world. A global power city, New York exerts a significant impact upon commerce, finance, media, art, fashion, research, technology, education, and entertainment, its fast pace defining the term New York minute. Home to the headquarters of the United Nations, New York is an important center for international diplomacy and has been described as the cultural and financial capital of the world.
+question:  What city in the United States has the highest population?
+{'guessed_answer': 'new york city', 'actual_answer': 'New York'}
+
+
+context:  To Kill a Mockingbird is a novel by Harper Lee published in 1960. It was immediately successful, winning the Pulitzer Prize, and has become a classic of modern American literature. The plot and characters are loosely based on the author's observations of her family and neighbors, as well as on an event that occurred near her hometown in 1936, when she was 10 years old.
+question:  What year was To Kill a Mockingbird first published?
+{'guessed_answer': '1960', 'actual_answer': '1960'}
+
+
+context:  Buddhism /ˈbudɪzəm/ is a nontheistic religion[note 1] or philosophy (Sanskrit: धर्म dharma; Pali: धम्म dhamma) that encompasses a variety of traditions, beliefs and spiritual practices largely based on teachings attributed to Gautama Buddha, commonly known as the Buddha ("the awakened one"). According to Buddhist tradition, the Buddha lived and taught in the eastern part of the Indian subcontinent, present-day Nepal sometime between the 6th and 4th centuries BCE.[note 1] He is recognized by Buddhists as an awakened or enlightened teacher who shared his insights to help sentient beings end their suffering through the elimination of ignorance and craving. Buddhists believe that this is accomplished through the direct understanding and perception of dependent origination and the Four Noble Truths.
+question:  What type of religion is Buddhism?
+{'guessed_answer': 'nontheistic religion', 'actual_answer': 'nontheistic'}
+
+
+context:  Buddhism /ˈbudɪzəm/ is a nontheistic religion[note 1] or philosophy (Sanskrit: धर्म dharma; Pali: धम्म dhamma) that encompasses a variety of traditions, beliefs and spiritual practices largely based on teachings attributed to Gautama Buddha, commonly known as the Buddha ("the awakened one"). According to Buddhist tradition, the Buddha lived and taught in the eastern part of the Indian subcontinent, present-day Nepal sometime between the 6th and 4th centuries BCE.[note 1] He is recognized by Buddhists as an awakened or enlightened teacher who shared his insights to help sentient beings end their suffering through the elimination of ignorance and craving. Buddhists believe that this is accomplished through the direct understanding and perception of dependent origination and the Four Noble Truths.
+question:  Where was Buddha thought to live?
+{'guessed_answer': 'present-day nepal', 'actual_answer': 'Nepal'}
+
+
+context:  American Idol is an American singing competition series created by Simon Fuller and produced by 19 Entertainment, and is distributed by FremantleMedia North America. It began airing on Fox on June 11, 2002, as an addition to the Idols format based on the British series Pop Idol and has since become one of the most successful shows in the history of American television. The concept of the series is to find new solo recording artists, with the winner being determined by the viewers in America. Winners chosen by viewers through telephone, Internet, and SMS text voting were Kelly Clarkson, Ruben Studdard, Fantasia Barrino, Carrie Underwood, Taylor Hicks, Jordin Sparks, David Cook, Kris Allen, Lee DeWyze, Scotty McCreery, Phillip Phillips, Candice Glover, Caleb Johnson, and Nick Fradiani.
+question:  What television network does American Idol air on?
+{'guessed_answer': 'fox', 'actual_answer': 'Fox'}
+
+
+context:  The domestic dog (Canis lupus familiaris or Canis familiaris) is a domesticated canid which has been selectively bred for millennia for various behaviors, sensory capabilities, and physical attributes.
+question:  Along with various behaviors and physical attributes, what were domestic dogs bred for?
+{'guessed_answer': 'lute family', 'actual_answer': 'sensory capabilities'}
+
+
+context:  In modern molecular biology and genetics, the genome is the genetic material of an organism. It consists of DNA (or RNA in RNA viruses). The genome includes both the genes and the non-coding sequences of the DNA/RNA.
+question:  What is the content of the human genome?
+{'guessed_answer': 'it is the oldest skeletal find of its kind', 'actual_answer': 'DNA'}
+
+
+context:  The Republic of the Congo (French: République du Congo), also known as Congo, Congo Republic, West Congo[citation needed], or Congo-Brazzaville, is a country located in Central Africa. It is bordered by five countries: Gabon to the west; Cameroon to the northwest; the Central African Republic to the northeast; the Democratic Republic of the Congo to the east and south; and the Angolan exclave of Cabinda to the southwest.
+question:  Which country lies on Congo's northwest border?
+{'guessed_answer': 'cameroon', 'actual_answer': 'Cameroon'}
+
+
+context:  The Wayback Machine is a digital archive of the World Wide Web and other information on the Internet created by the Internet Archive, a nonprofit organization, based in San Francisco, California, United States. It was set up by Brewster Kahle and Bruce Gilliat, and is maintained with content from Alexa Internet. The service enables users to see archived versions of web pages across time, which the archive calls a "three dimensional index."
+question:  What is the term used by Internet Archive to describe the Wayback Machine?
+{'guessed_answer': 'three dimensional index', 'actual_answer': 'three dimensional index'}
+
+
+context:  The Canadian Armed Forces (CAF; French: Forces armées canadiennes, FAC), or Canadian Forces (CF) (French: les Forces canadiennes, FC), is the unified armed force of Canada, as constituted by the National Defence Act, which states: "The Canadian Forces are the armed forces of Her Majesty raised by Canada and consist of one Service called the Canadian Armed Forces."
+question:  What does CF stand for in this context?
+{'guessed_answer': 'forces canadiennes', 'actual_answer': 'Forces canadiennes'}
+
+
+context:  Lighting or illumination is the deliberate use of light to achieve a practical or aesthetic effect. Lighting includes the use of both artificial light sources like lamps and light fixtures, as well as natural illumination by capturing daylight. Daylighting (using windows, skylights, or light shelves) is sometimes used as the main source of light during daytime in buildings. This can save energy in place of using artificial lighting, which represents a major component of energy consumption in buildings. Proper lighting can enhance task performance, improve the appearance of an area, or have positive psychological effects on occupants.
+question:  Using natural illumination instead of artificial light sources help with what?
+{'guessed_answer': 'energy consumption', 'actual_answer': 'energy consumption'}
+
+
+context:  Separation of powers is a political doctrine originating in the writings of Montesquieu in The Spirit of the Laws where he urged for a constitutional government with three separate branches of government. Each of the three branches would have defined abilities to check the powers of the other branches. This idea was called separation of powers. This philosophy heavily influenced the writing of the United States Constitution, according to which the Legislative, Executive, and Judicial branches of the United States government are kept distinct in order to prevent abuse of power. This United States form of separation of powers is associated with a system of checks and balances.
+question:  What document was greatly informed by the idea of separation of powers?
+{'guessed_answer': 'united states constitution', 'actual_answer': 'United States Constitution'}
+
+
+context:  The Human Development Index (HDI) is a composite statistic of life expectancy, education, and income per capita indicators, which are used to rank countries into four tiers of human development. A country scores higher HDI when the life expectancy at birth is longer, the education period is longer, and the income per capita is higher. The HDI was developed by the Pakistani economist Mahbub ul Haq, often framed in terms of whether people are able to "be" and "do" desirable things in their life, and was published by the United Nations Development Programme.
+question:  Does a high ranking on the HDI indicate shorter or longer life expectancy?
+{'guessed_answer': 'longer', 'actual_answer': 'longer'}
