@@ -89,32 +89,32 @@ class Dataset:
             self.input_question_max_seq_length = max(self.input_question_max_seq_length, len(question_word_list))
             self.target_max_seq_length = max(self.target_max_seq_length, len(output_data))
 
-        input_paragraph_word2idx = dict()
-        input_question_word2idx = dict()
-        target_word2idx = dict()
+        self.input_paragraph_word2idx = dict()
+        self.input_question_word2idx = dict()
+        self.target_word2idx = dict()
 
         # Mapping from word to index
         for idx, word in enumerate(input_paragraph_counter.most_common(max_input_vocab_size)):
-            input_paragraph_word2idx[word[0]] = idx + 2
+            self.input_paragraph_word2idx[word[0]] = idx + 2
         for idx, word in enumerate(input_question_counter.most_common(max_input_vocab_size)):
-            input_question_word2idx[word[0]] = idx + 2
+            self.input_question_word2idx[word[0]] = idx + 2
         for idx, word in enumerate(target_counter.most_common(max_target_vocab_size)):
-            target_word2idx[word[0]] = idx + 1
+            self.target_word2idx[word[0]] = idx + 1
 
-        target_word2idx['UNK'] = 0
-        input_paragraph_word2idx['PAD'] = 0
-        input_paragraph_word2idx['UNK'] = 1
-        input_question_word2idx['PAD'] = 0
-        input_paragraph_word2idx['UNK'] = 1
+        self.target_word2idx['UNK'] = 0
+        self.input_paragraph_word2idx['PAD'] = 0
+        self.input_paragraph_word2idx['UNK'] = 1
+        self.input_question_word2idx['PAD'] = 0
+        self.input_paragraph_word2idx['UNK'] = 1
 
         # Mapping from index to word
-        input_paragraph_idx2word = dict([(idx, word) for word, idx in input_paragraph_word2idx.items()])
-        input_question_idx2word = dict([(idx, word) for word, idx in input_question_word2idx.items()])
-        target_idx2word = dict([(idx, word) for word, idx in target_word2idx.items()])
+        self.input_paragraph_idx2word = dict([(idx, word) for word, idx in self.input_paragraph_word2idx.items()])
+        self.input_question_idx2word = dict([(idx, word) for word, idx in self.input_question_word2idx.items()])
+        self.target_idx2word = dict([(idx, word) for word, idx in self.target_word2idx.items()])
 
-        self.num_input_paragraph_tokens = len(input_paragraph_idx2word)
-        self.num_input_question_tokens = len(input_question_idx2word)
-        self.num_target_tokens = len(target_idx2word)
+        self.num_input_paragraph_tokens = len(self.input_paragraph_idx2word)
+        self.num_input_question_tokens = len(self.input_question_idx2word)
+        self.num_target_tokens = len(self.target_idx2word)
 
         self.input_encoded_data_samples = []
         self.target_encoded_data_samples = []
@@ -125,22 +125,23 @@ class Dataset:
             target_encoded_data = []
             input_paragraph_data, input_question_data = input_data
             for word in input_paragraph_data:
-                if word in input_paragraph_word2idx:
-                    input_paragraph_encoded_data.append(input_paragraph_word2idx[word])
+                if word in self.input_paragraph_word2idx:
+                    input_paragraph_encoded_data.append(self.input_paragraph_word2idx[word])
                 else:
                     input_paragraph_encoded_data.append(1)
             for word in input_question_data:
-                if word in input_question_word2idx:
-                    input_question_encoded_data.append(input_question_word2idx[word])
+                if word in self.input_question_word2idx:
+                    input_question_encoded_data.append(self.input_question_word2idx[word])
                 else:
                     input_question_encoded_data.append(1)
             for word in output_data:
-                if word in target_word2idx:
-                    target_encoded_data.append(target_word2idx[word])
+                if word in self.target_word2idx:
+                    target_encoded_data.append(self.target_word2idx[word])
                 else:
                     target_encoded_data.append(0)
             self.input_encoded_data_samples.append([input_paragraph_encoded_data, input_question_encoded_data])
             self.target_encoded_data_samples.append(target_encoded_data)
+
 
     def generate_batch(self, input_paragraph_max_seq_length, input_question_max_seq_length, target_max_seq_length,
                        num_target_tokens, input_data, output_data, batch_size):
