@@ -37,6 +37,7 @@ class NNModel:
 
         checkpoint = ModelCheckpoint(os.path.join('..', 'model_%s.h5' % time.time()), monitor='val_loss', verbose=1, save_best_only=True, mode='min')
         reduce_alpha = ReduceLROnPlateau(monitor='val_loss', factor=0.2, patience=1, min_lr=0.001)
+        # es = Earpping(monitor='val_loss', mode='min', verbose=1, patience=2)
         self.callbacks = [checkpoint, reduce_alpha]
 
 
@@ -85,7 +86,7 @@ class NNModel:
 
         return model, encoder_model, decoder_model
 
-    def train(self, name):
+    def train(self):
         history = self.model.fit_generator(
             generator=self.dataset.train_gen,
             steps_per_epoch=self.dataset.train_num_batches,
@@ -94,14 +95,6 @@ class NNModel:
             validation_data=self.dataset.test_gen,
             validation_steps=self.dataset.test_num_batches,
             callbacks=self.callbacks)
-        self.model.save_weights(os.path.join('..', 'models', '%s.h5' % name))
-        self.encoder_model.save_weights(os.path.join('..', 'models', 'encoder_%s.h5' % name))
-        self.decoder_model.save_weights(os.path.join('..', 'models', 'decoder_%s.h5' % name))
-
-    def load_model(self, name):
-        self.model.load_weights(os.path.join('..', 'models', '%s.h5' % name))
-        self.encoder_model.load_weights(os.path.join('..', 'models', 'encoder_%s.h5' % name))
-        self.decoder_model.load_weights(os.path.join('..', 'models', 'decoder_%s.h5' % name))
 
     def test(self, context, question):
         predicted_answer = self.reply(context, question)
@@ -118,18 +111,18 @@ class NNModel:
         input_paragraph_text = paragraph.lower()
         input_question_text = question.lower()
         for word in nltk.word_tokenize(input_paragraph_text):
-            if not self.dataset.in_white_list(word):
+            if not self.in_white_list(word):
                 continue
             idx = 1  # default [UNK]
             if word in self.dataset.input_paragraph_word2idx:
                 idx = self.dataset.input_paragraph_word2idx[word]
             input_paragraph_wid_list.append(idx)
         for word in nltk.word_tokenize(input_question_text):
-            if not self.dataset.in_white_list(word):
+            if not in_white_list(word):
                 continue
                 idx = 1  # default [UNK]
-            if word in self.dataset.input_question_word2idx:
-                idx = self.dataset.input_question_word2idx[word]
+            if word in input_question_word2idx:
+                idx = input_question_word2idx[word]
             input_question_wid_list.append(idx)
         input_paragraph_seq.append(input_paragraph_wid_list)
         input_question_seq.append(input_question_wid_list)
@@ -138,8 +131,8 @@ class NNModel:
         input_question_seq = pad_sequences(input_question_seq, self.dataset.input_question_max_seq_length)
         states_value = self.encoder_model.predict([input_paragraph_seq, input_question_seq])
 
-        target_seq = np.zeros((1, 1, self.dataset.num_target_tokens))
-        target_seq[0, 0, self.dataset.target_word2idx['START']] = 1
+        target_seq = np.zeros((1, 1, num_target_tokens))
+        target_seq[0, 0, target_word2idx['START']] = 1
         target_text = ''
         target_text_len = 0
         terminated = False
@@ -147,16 +140,16 @@ class NNModel:
             output_tokens, h, c = self.decoder_model.predict([target_seq] + states_value)
 
             sample_token_idx = np.argmax(output_tokens[0, -1, :])
-            sample_word = self.dataset.target_idx2word[sample_token_idx]
+            sample_word = target_idx2word[sample_token_idx]
             target_text_len += 1
 
             if sample_word != 'START' and sample_word != 'END':
                 target_text += ' ' + sample_word
 
-            if sample_word == 'END' or target_text_len >= self.dataset.target_max_seq_length:
+            if sample_word == 'END' or target_text_len >= target_max_seq_length:
                 terminated = True
 
-            target_seq = np.zeros((1, 1, self.dataset.num_target_tokens))
+            target_seq = np.zeros((1, 1, num_target_tokens))
             target_seq[0, 0, sample_token_idx] = 1
 
             states_value = [h, c]
